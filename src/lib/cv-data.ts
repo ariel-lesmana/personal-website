@@ -31,11 +31,11 @@ export type Language = { name: string; level: string };
 export const CV_DATA = {
   name: { first: "Ariel Pratama", last: "Lesmana" },
   tagline:
-    "Fullstack developer building reliable web systems and shipping AI features into production.",
+    "GenAI software engineer building RAG pipelines, LLM-powered features, and reliable fullstack systems.",
   status: {
     label: "Currently",
-    company: "Insignia",
-    role: "Fullstack Developer",
+    company: "Senserbot",
+    role: "GenAI Software Engineer",
     remote: true,
   },
   contact: {
@@ -45,17 +45,45 @@ export const CV_DATA = {
   },
   stats: [
     { num: "3", suffix: "+", label: "years building production systems" },
-    { num: "95", suffix: "%", label: "accuracy on CV-based fitness AI", accent: true },
+    { num: "95", suffix: "%", label: "accuracy on CNN-based fitness AI", accent: true },
     { num: "100", suffix: "%", label: "Azure deploy success — zero rollbacks", accent: true },
   ] as Stat[],
   experience: [
+    {
+      id: "senserbot",
+      company: "Senserbot PTE. LTD",
+      role: "GenAI Software Engineer",
+      location: "Remote",
+      date: "Jun 2026 — Present",
+      current: true,
+      stack: ["FastAPI", "Python", "ChromaDB", "sentence-transformers", "LLM", "RAG", "Docker"],
+      bullets: [
+        {
+          strong: "Designing RAG pipelines",
+          rest: " for document retrieval and AI-powered search across logistics and e-commerce data.",
+        },
+        {
+          strong: "Developing LLM-integrated backend services",
+          rest: " with FastAPI, implementing prompt engineering, context management, and response evaluation.",
+        },
+        {
+          strong: "Building AI agent workflows",
+          rest: " for automated decision-making in fourth-party logistics operations.",
+        },
+        {
+          strong: "Implementing vector search and embedding pipelines",
+          rest: " using ChromaDB and sentence-transformers for semantic retrieval.",
+        },
+      ],
+      highlight: { num: "4PL", label: "AI-powered logistics platform" },
+    },
     {
       id: "insignia",
       company: "Insignia",
       role: "Fullstack Developer",
       location: "Remote",
-      date: "Jun 2025 — Present",
-      current: true,
+      date: "Jun 2025 — Jun 2026",
+      current: false,
       stack: ["Next.js", "Node.js", "REST API", "Azure", "PostgreSQL", "GenAI", "LLM"],
       bullets: [
         {
@@ -146,8 +174,11 @@ export const CV_DATA = {
     { name: "MongoDB", cat: "Databases", level: 4 },
     { name: "MariaDB", cat: "Databases", level: 4 },
     { name: "Supabase", cat: "Databases", level: 4 },
+    { name: "ChromaDB", cat: "Databases", level: 4 },
     { name: "GenAI", cat: "AI/ML", level: 5 },
     { name: "LLM Integration", cat: "AI/ML", level: 5 },
+    { name: "RAG", cat: "AI/ML", level: 5 },
+    { name: "sentence-transformers", cat: "AI/ML", level: 4 },
     { name: "Prompt Engineering", cat: "AI/ML", level: 4 },
     { name: "NLP", cat: "AI/ML", level: 4 },
     { name: "TensorFlow", cat: "AI/ML", level: 4 },

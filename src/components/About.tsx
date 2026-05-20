@@ -14,17 +14,19 @@ export function About() {
       <div className="about-body reveal">
         <div />
         <div className="about-lead">
-          I build fullstack web platforms with a focus on{" "}
-          <span className="serif">backend reliability</span>, performance, and
-          shipping AI features that actually work in production.
+          I build <span className="serif">GenAI-powered systems</span> and
+          fullstack web platforms — from RAG pipelines and LLM integrations to
+          production APIs that actually work at scale.
         </div>
         <div className="about-detail">
           <p>
-            Right now I&apos;m at <strong>Insignia</strong>, working remotely on
-            dashboards, RESTful APIs, GenAI model integrations and Azure
-            deployments. Before that I spent two years at{" "}
-            <strong>Etherval IT Consultancy</strong> in Surabaya leading ERP
-            work, AWS infra, and an AI fitness app.
+            Currently at <strong>Senserbot</strong>, building AI-driven
+            solutions for logistics and e-commerce — RAG pipelines, LLM
+            integrations, and intelligent automation. Before that I shipped
+            dashboards, GenAI features, and zero-rollback deployments at{" "}
+            <strong>Insignia</strong>, and spent two years at{" "}
+            <strong>Etherval IT Consultancy</strong> leading ERP work, AWS
+            infra, and a CNN-based fitness app.
           </p>
           <p>
             I care about query performance, automated testing, and CI/CD
