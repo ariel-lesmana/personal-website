@@ -92,6 +92,14 @@ body.spotlight-on .spotlight { opacity: 1; }
   gap: 8px;
   align-items: center;
 }
+.nav-logo {
+  display: inline-flex;
+  color: var(--ink);
+  margin-right: 4px;
+  transition: opacity 0.2s ease;
+}
+.nav-logo:hover { opacity: 0.6; }
+.nav-logo svg { width: 26px; height: 26px; display: block; }
 .nav-dot {
   width: 8px; height: 8px;
   border-radius: 50%;
@@ -218,7 +226,8 @@ body.spotlight-on .spotlight { opacity: 1; }
   letter-spacing: -0.045em;
   margin: 60px 0 40px;
 }
-.hero-name .lastname { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spacing: -0.02em; }
+.hero-name .firstname { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spacing: -0.02em; }
+.hero-name .lastname { font-family: var(--display); font-style: normal; font-weight: 500; letter-spacing: -0.045em; }
 .hero-name .char {
   display: inline-block;
   opacity: 0;

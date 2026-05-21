@@ -26,6 +26,13 @@ export function Nav() {
   return (
     <nav className={`nav ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-brand">
+        <a href="#" className="nav-logo" aria-label="Home">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <circle cx="42" cy="58" r="24" fill="none" stroke="currentColor" strokeWidth="7" />
+            <line x1="66" y1="34" x2="66" y2="82" stroke="currentColor" strokeWidth="7" strokeLinecap="round" />
+            <circle cx="66" cy="22" r="5" fill="var(--accent)" />
+          </svg>
+        </a>
         <span className="nav-dot" />
         <span>AVAILABLE / REMOTE</span>
       </div>
