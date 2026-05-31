@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { JsonLd } from "@/components/JsonLd";
+import { IDENTITY, SITE_URL } from "@/data/identity";
 
 const geistSans = Geist({
   variable: "--font-geist",
@@ -20,15 +22,29 @@ const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
 });
 
+const TITLE = "Ariel Pratama Lesmana — Fullstack & GenAI Software Engineer";
+
 export const metadata: Metadata = {
-  title: "Ariel Pratama Lesmana — Fullstack Developer",
-  description:
-    "Fullstack developer building reliable web systems and shipping AI features into production. Currently at Insignia, remote.",
+  metadataBase: new URL(SITE_URL),
+  title: TITLE,
+  description: IDENTITY.description,
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "Ariel Pratama Lesmana — Fullstack Developer",
-    description:
-      "Fullstack developer building reliable web systems and shipping AI features into production.",
+    title: TITLE,
+    description: IDENTITY.description,
+    url: SITE_URL,
+    siteName: IDENTITY.name,
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: IDENTITY.description,
+  },
+  verification: {
+    google: "9BJnhzVzN7ZnG_Qcv53gWwojZ5L-p7uEDguz9NGAELc",
   },
   icons: {
     icon: [
@@ -50,10 +66,12 @@ export default function RootLayout({
     <html
       lang="en"
       data-theme="light"
+      suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable}`}
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
+        <JsonLd />
       </head>
       <body>
         <ThemeProvider>{children}</ThemeProvider>

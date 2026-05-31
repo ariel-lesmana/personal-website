@@ -5,7 +5,7 @@ export function Contact() {
   return (
     <section className="contact-section" id="contact">
       <div className="section-label reveal" style={{ display: "flex", gap: 12 }}>
-        <span className="section-label-num">05</span>
+        <span className="section-label-num">06</span>
         <span>Contact</span>
       </div>
       <h2 className="contact-cta reveal">

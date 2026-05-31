@@ -20,6 +20,10 @@ export function About() {
         </div>
         <div className="about-detail">
           <p>
+            <strong>Ariel Pratama Lesmana</strong> is a backend-leaning
+            fullstack and GenAI software engineer based in Bali, Indonesia.
+          </p>
+          <p>
             Currently at <strong>Senserbot</strong>, building AI-driven
             solutions for logistics and e-commerce — RAG pipelines, LLM
             integrations, and intelligent automation. Before that I shipped

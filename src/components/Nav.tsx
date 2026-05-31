@@ -9,7 +9,8 @@ const LINKS = [
   { id: "experience", n: "02", label: "Work" },
   { id: "skills", n: "03", label: "Skills" },
   { id: "education", n: "04", label: "Studies" },
-  { id: "contact", n: "05", label: "Contact" },
+  { id: "faq", n: "05", label: "FAQ" },
+  { id: "contact", n: "06", label: "Contact" },
 ];
 
 export function Nav() {
