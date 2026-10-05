@@ -14,19 +14,20 @@ export function About() {
       <div className="about-body reveal">
         <div />
         <div className="about-lead">
-          I build <span className="serif">GenAI-powered systems</span> and
-          fullstack web platforms — from RAG pipelines and LLM integrations to
-          production APIs that actually work at scale.
+          I build <span className="serif">AI for robots in production</span>{" "}
+          and the fullstack platforms around it — from on-robot computer vision
+          to the dashboards and APIs operators use every day.
         </div>
         <div className="about-detail">
           <p>
-            <strong>Ariel Pratama Lesmana</strong> is a backend-leaning
-            fullstack and GenAI software engineer based in Bali, Indonesia.
+            <strong>Ariel Pratama Lesmana</strong> is a GenAI engineer based in
+            Bali, Indonesia, with a backend-leaning fullstack background.
           </p>
           <p>
-            Currently at <strong>Senserbot</strong>, building AI-driven
-            solutions for logistics and e-commerce — RAG pipelines, LLM
-            integrations, and intelligent automation. Before that I shipped
+            Currently at <strong>Senserbot</strong>, building computer vision
+            and AI for museum security and tour-guide robots — patrol logic, lift
+            integration, operator dashboards, and now RAG for the robots&apos;
+            answers. Before that I shipped
             dashboards, GenAI features, and zero-rollback deployments at{" "}
             <strong>Insignia</strong>, and spent two years at{" "}
             <strong>Etherval IT Consultancy</strong> leading ERP work, AWS

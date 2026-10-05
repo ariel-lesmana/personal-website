@@ -22,7 +22,7 @@ const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
 });
 
-const TITLE = "Ariel Pratama Lesmana — Fullstack & GenAI Software Engineer";
+const TITLE = "Ariel Pratama Lesmana — GenAI Engineer";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

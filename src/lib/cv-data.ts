@@ -19,7 +19,7 @@ export type Experience = {
   current: boolean;
   stack: string[];
   bullets: ExperienceBullet[];
-  highlight: { num: string; label: string };
+  highlight?: { num: string; label: string }; // ponytail: optional until a real number exists
 };
 
 export type Skill = { name: string; cat: SkillCategory; level: 1 | 2 | 3 | 4 | 5 };
@@ -31,11 +31,11 @@ export type Language = { name: string; level: string };
 export const CV_DATA = {
   name: { first: "Ariel Pratama", last: "Lesmana" },
   tagline:
-    "GenAI software engineer building RAG pipelines, LLM-powered features, and reliable fullstack systems.",
+    "GenAI engineer building computer vision and AI for robots in production.",
   status: {
     label: "Currently",
     company: "Senserbot",
-    role: "GenAI Software Engineer",
+    role: "GenAI Engineer",
     remote: true,
   },
   contact: {
@@ -52,30 +52,37 @@ export const CV_DATA = {
     {
       id: "senserbot",
       company: "Senserbot PTE. LTD",
-      role: "GenAI Software Engineer",
+      role: "GenAI Engineer",
       location: "Remote",
       date: "Jun 2026 — Present",
       current: true,
-      stack: ["FastAPI", "Python", "ChromaDB", "sentence-transformers", "LLM", "RAG", "Docker"],
+      stack: ["Python", "FastAPI", "OpenCV", "YOLO", "MediaPipe", "ROS", "Intel RealSense", "React", "Next.js", "Docker", "AWS S3", "MCP"],
       bullets: [
         {
-          strong: "Designing RAG pipelines",
-          rest: " for document retrieval and AI-powered search across logistics and e-commerce data.",
+          strong: "Built computer-vision OCR for field photos",
+          rest: " — reads niche numbers and Chinese and English names from photos taken on site, with a dashboard to correct misreads.",
         },
         {
-          strong: "Developing LLM-integrated backend services",
-          rest: " with FastAPI, implementing prompt engineering, context management, and response evaluation.",
+          strong: "Built the patrol logic for museum security robots",
+          rest: " — a state machine, POIs and routes editable over an API, floor-to-floor lift rides through the elevator vendor's API with an audit trail, and vision checks on an edge PC.",
         },
         {
-          strong: "Building AI agent workflows",
-          rest: " for automated decision-making in fourth-party logistics operations.",
+          strong: "Shipped on-robot computer vision",
+          rest: " — artifact-intrusion and unattended-object detection (YOLO, hand tracking, overlap checks) that raises alerts with evidence images.",
         },
         {
-          strong: "Implementing vector search and embedding pipelines",
-          rest: " using ChromaDB and sentence-transformers for semantic retrieval.",
+          strong: "Built operator dashboards and CMSs",
+          rest: " — robot controls, POI and route editors, scan-to-scan anomaly comparison for a columbarium, and a tour-guide content CMS now in production.",
+        },
+        {
+          strong: "Taking over a speech-to-answer GenAI service",
+          rest: " for tour-guide robots: scoped the handover and started RAG work on its answers.",
+        },
+        {
+          strong: "Built the team's kanban board with an MCP server",
+          rest: ", so engineers and their AI agents work from the same cards.",
         },
       ],
-      highlight: { num: "4PL", label: "AI-powered logistics platform" },
     },
     {
       id: "insignia",
@@ -159,9 +166,6 @@ export const CV_DATA = {
     { name: "TypeScript", cat: "Languages", level: 5 },
     { name: "Java", cat: "Languages", level: 4 },
     { name: "SQL", cat: "Languages", level: 4 },
-    { name: "Dart", cat: "Languages", level: 3 },
-    { name: "Kotlin", cat: "Languages", level: 3 },
-    { name: "C", cat: "Languages", level: 3 },
     { name: "HTML/CSS", cat: "Languages", level: 4 },
     { name: "Next.js", cat: "Frontend", level: 5 },
     { name: "React", cat: "Frontend", level: 5 },
@@ -183,15 +187,19 @@ export const CV_DATA = {
     { name: "NLP", cat: "AI/ML", level: 4 },
     { name: "TensorFlow", cat: "AI/ML", level: 4 },
     { name: "CNN", cat: "AI/ML", level: 4 },
-    { name: "ARIMA", cat: "AI/ML", level: 3 },
+    { name: "Computer Vision", cat: "AI/ML", level: 4 },
+    { name: "YOLO", cat: "AI/ML", level: 4 },
+    { name: "OpenCV", cat: "AI/ML", level: 4 },
+    { name: "MediaPipe", cat: "AI/ML", level: 3 },
+    { name: "MCP", cat: "AI/ML", level: 4 },
     { name: "Docker", cat: "Infra", level: 4 },
     { name: "AWS", cat: "Infra", level: 4 },
     { name: "Azure", cat: "Infra", level: 4 },
     { name: "GitHub Actions", cat: "Infra", level: 5 },
     { name: "CI/CD", cat: "Infra", level: 5 },
-    { name: "Jenkins", cat: "Infra", level: 3 },
     { name: "Git", cat: "Infra", level: 5 },
     { name: "Linux", cat: "Infra", level: 4 },
+    { name: "ROS", cat: "Infra", level: 3 },
   ] as Skill[],
   education: {
     school: "Institut Sains dan Teknologi Terpadu Surabaya",

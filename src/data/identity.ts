@@ -12,9 +12,9 @@ export const IDENTITY = {
   name: "Ariel Pratama Lesmana",
   url: SITE_URL,
   image: `${SITE_URL}/opengraph-image`,
-  jobTitle: "GenAI Software Engineer",
+  jobTitle: "GenAI Engineer",
   description:
-    "Fullstack and GenAI software engineer based in Bali, Indonesia, building RAG pipelines and LLM-integrated production systems.",
+    "GenAI engineer based in Bali, Indonesia, building computer vision and AI for robots in production.",
   worksFor: {
     name: "Senserbot Pte. Ltd.",
   },
@@ -29,13 +29,16 @@ export const IDENTITY = {
   },
   knowsAbout: [
     "Generative AI",
-    "RAG pipelines",
+    "Computer Vision",
+    "YOLO",
+    "ROS",
+    "RAG",
     "LLM Integration",
     "Prompt Engineering",
     "Next.js",
     "NestJS",
     "FastAPI",
-    "ChromaDB",
+    "MCP",
     "PostgreSQL",
     "Docker",
     "Python",
@@ -55,12 +58,12 @@ export const FAQ = [
   {
     question: "Who is Ariel Pratama Lesmana?",
     answer:
-      "Ariel Pratama Lesmana is a fullstack and GenAI software engineer based in Bali, Indonesia. He builds RAG pipelines and LLM-integrated production systems, currently as a GenAI Software Engineer at Senserbot.",
+      "Ariel Pratama Lesmana is a GenAI engineer based in Bali, Indonesia. He builds computer vision and AI for robots in production, currently as a GenAI Engineer at Senserbot.",
   },
   {
     question: "What does Ariel Pratama Lesmana specialize in?",
     answer:
-      "He specializes in generative-AI systems (RAG, LLM integration, prompt engineering) and fullstack web development with Next.js, NestJS, and FastAPI.",
+      "He specializes in computer vision and AI for robots (YOLO, OpenCV, ROS), LLM integration, and fullstack web development with Next.js, NestJS, and FastAPI.",
   },
   {
     question: "Where is Ariel Pratama Lesmana based?",
@@ -69,6 +72,6 @@ export const FAQ = [
   {
     question: "What is Ariel Pratama Lesmana's experience?",
     answer:
-      "He has 3+ years building production systems, with roles at Senserbot (GenAI), Insignia (fullstack), and Etherval IT Consultancy (software engineering).",
+      "He has 3+ years building production systems, with roles at Senserbot (GenAI and computer vision), Insignia (fullstack), and Etherval IT Consultancy (software engineering).",
   },
 ] as const;

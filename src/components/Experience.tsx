@@ -56,12 +56,14 @@ function ExperienceItem({
                 ))}
               </div>
               <div className="exp-side">
-                <div className="exp-highlight-card">
-                  <div className="exp-highlight-num">{item.highlight.num}</div>
-                  <div className="exp-highlight-label">
-                    {item.highlight.label}
+                {item.highlight && (
+                  <div className="exp-highlight-card">
+                    <div className="exp-highlight-num">{item.highlight.num}</div>
+                    <div className="exp-highlight-label">
+                      {item.highlight.label}
+                    </div>
                   </div>
-                </div>
+                )}
                 <div>
                   <div className="exp-stack-label">Stack</div>
                   <div className="exp-stack-chips">
@@ -93,7 +95,7 @@ export function Experience() {
           <span>Selected Work</span>
         </div>
         <h2 className="section-title">
-          Two roles, <span className="serif">three years</span>, lots of shipped
+          Three roles, <span className="serif">three years</span>, lots of shipped
           systems.
         </h2>
       </div>

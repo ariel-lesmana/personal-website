@@ -40,8 +40,8 @@ export function Hero() {
       </h1>
       <div className="hero-bottom">
         <p className="hero-bio">
-          <strong>Fullstack developer</strong> shipping reliable web systems and
-          production AI features. Currently at{" "}
+          <strong>GenAI engineer</strong> building computer vision and AI for
+          robots in production. Currently at{" "}
           <strong>{CV_DATA.status.company}</strong>, remote.
         </p>
         <div className="hero-stats">

@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { IDENTITY } from "@/data/identity";
 
-export const alt = `${IDENTITY.name} — Fullstack & GenAI Software Engineer`;
+export const alt = `${IDENTITY.name} — GenAI Engineer`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -71,9 +71,9 @@ export default function Image() {
               letterSpacing: "-0.01em",
             }}
           >
-            <span>Fullstack</span>
+            <span>GenAI Engineer</span>
             <span style={{ color: accent }}>&</span>
-            <span>GenAI Software Engineer</span>
+            <span>Computer Vision</span>
           </div>
         </div>
 
@@ -89,7 +89,7 @@ export default function Image() {
           }}
         >
           <span>ariellesmana.dev</span>
-          <span>RAG · LLM Integration · Next.js · FastAPI</span>
+          <span>Computer Vision · ROS · LLM · Next.js · FastAPI</span>
         </div>
       </div>
     ),
