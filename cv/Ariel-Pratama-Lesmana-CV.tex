@@ -1,0 +1,72 @@
+% Ariel Pratama Lesmana's CV. Edit here (or in the workbench's CV panel), then `npm run cv` compiles it with tectonic
+% into public/Ariel-Pratama-Lesmana-CV.pdf, which the site links as Download CV. Single column, plain text, no tables
+% or icons, so applicant tracking systems read it in order.
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=0.5in]{geometry}
+\usepackage{enumitem,titlesec}
+\usepackage[hidelinks]{hyperref}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\titleformat{\section}{\large\bfseries\scshape}{}{0pt}{}[\vspace{-6pt}\rule{\textwidth}{0.4pt}]
+\titlespacing{\section}{0pt}{7pt}{4pt}
+\setlist[itemize]{leftmargin=1.1em,itemsep=0.5pt,topsep=1pt,parsep=0pt}
+\newcommand{\entry}[4]{\textbf{#1}\hfill #2\\\textit{#3}\hfill\textit{#4}\par}
+\hypersetup{pdftitle={Ariel Pratama Lesmana CV},pdfauthor={Ariel Pratama Lesmana}}
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries Ariel Pratama Lesmana}\\[4pt]
+GenAI Engineer \textbullet{} Bali, Indonesia (remote)\\[2pt]
+\href{mailto:ariel.p.lesmana@gmail.com}{ariel.p.lesmana@gmail.com} \textbar{} \href{https://linkedin.com/in/ariel-p-lesmana}{linkedin.com/in/ariel-p-lesmana} \textbar{} \href{https://github.com/ariel-lesmana}{github.com/ariel-lesmana} \textbar{} \href{https://www.ariellesmana.dev}{ariellesmana.dev}
+\end{center}
+
+\section{Summary}
+GenAI engineer building computer vision and AI for robots in production. 3+ years building production systems.
+
+\section{Experience}
+\entry{GenAI Engineer}{Jun 2026 — Present}{Senserbot PTE. LTD}{Remote}
+\begin{itemize}
+  \item \textbf{Built computer-vision OCR for field photos} — reads niche numbers and Chinese and English names from photos taken on site, with a dashboard to correct misreads.
+  \item \textbf{Built the patrol logic for museum security robots} — a state machine, POIs and routes editable over an API, floor-to-floor lift rides through the elevator vendor's API with an audit trail, and vision checks on an edge PC.
+  \item \textbf{Shipped on-robot computer vision} — artifact-intrusion and unattended-object detection (YOLO, hand tracking, overlap checks) that raises alerts with evidence images.
+  \item \textbf{Built operator dashboards and CMSs} — robot controls, POI and route editors, scan-to-scan anomaly comparison for a columbarium, and a tour-guide content CMS now in production.
+  \item \textbf{Taking over a speech-to-answer GenAI service} for tour-guide robots: scoped the handover and started RAG work on its answers.
+  \item \textbf{Built the team's kanban board with an MCP server}, so engineers and their AI agents work from the same cards.
+\end{itemize}
+{\small\textit{Stack:} Python, FastAPI, OpenCV, YOLO, MediaPipe, ROS, Intel RealSense, React, Next.js, Docker, AWS S3, MCP}\par\medskip
+
+\entry{Fullstack Developer}{Jun 2025 — Jun 2026}{Insignia}{Remote}
+\begin{itemize}
+  \item \textbf{Built a full-stack dashboard system} improving data visibility and operational efficiency for clients.
+  \item \textbf{Designed RESTful APIs} for reliable backend integrations across multiple client systems.
+  \item \textbf{Integrated GenAI models} into production — pushed latest improvements live without regressions.
+  \item \textbf{Optimized DB queries} for measurable response-time gains and better app performance.
+\end{itemize}
+{\small\textit{Stack:} Next.js, Node.js, REST API, Azure, PostgreSQL, GenAI, LLM}\par\medskip
+
+\entry{Software Engineer}{Aug 2023 — May 2025}{Etherval IT Consultancy}{Surabaya, Indonesia}
+\begin{itemize}
+  \item \textbf{Led ERP development} used daily by 10–20 users; cut lag in key flows.
+  \item \textbf{Integrated AWS Lambda, ECR, ECS, S3} — slashed debugging time, hit 80\% reliability for AI functions.
+  \item \textbf{Engineered an AI fitness app} with CNNs and Google ML libs to track exercise form — 95\%+ accuracy.
+  \item \textbf{Optimized report-gen query perf} across \textasciitilde{}10k records on MariaDB, PostgreSQL, MongoDB.
+  \item \textbf{Introduced automated testing} — reduced deployment errors to 2\%; integration tests on every branch.
+  \item \textbf{Built CI/CD via GitHub Actions} — production deployment success rate climbed to 90\%.
+\end{itemize}
+{\small\textit{Stack:} Spring Boot, NestJS, FastAPI, AWS, Docker, TensorFlow, PostgreSQL, MongoDB, MariaDB, GitHub Actions}\par\medskip
+
+\section{Skills}
+\textbf{AI/ML:} GenAI, LLM Integration, RAG, sentence-transformers, Prompt Engineering, NLP, TensorFlow, CNN, Computer Vision, YOLO, OpenCV, MediaPipe, MCP\\
+\textbf{Languages:} Python, JavaScript, TypeScript, Java, SQL, HTML/CSS\\
+\textbf{Backend:} Node.js, NestJS, FastAPI, Spring Boot, REST API\\
+\textbf{Frontend:} Next.js, React\\
+\textbf{Databases:} PostgreSQL, MongoDB, MariaDB, Supabase, ChromaDB\\
+\textbf{Infra:} Docker, AWS, Azure, GitHub Actions, CI/CD, Git, Linux, ROS
+
+\section{Education \& Certifications}
+\entry{Institut Sains dan Teknologi Terpadu Surabaya}{Jul 2019 — Jul 2023}{Bachelor of Informatics, Computer Science}{Surabaya, Indonesia}
+{\small\textit{Coursework:} Data Structures, Big Data, Machine Learning, Deep Learning, Artificial Intelligence, Generative Algorithm, Data Analytics, Data Mining}\par\smallskip
+Intro to Machine Learning, Kaggle (Jan 2025) \textbullet{} AWS Academy Graduate — Data Analytics, Amazon Web Services (2023)\\
+Indonesian (Native), English (Professional)
+
+\end{document}

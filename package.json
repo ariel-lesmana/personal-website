@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "cv": "tsc scripts/cv.ts --outDir .cv --module commonjs --target es2022 --skipLibCheck && node .cv/scripts/cv.js > .cv/Ariel-Pratama-Lesmana-CV.tex && tectonic -o public .cv/Ariel-Pratama-Lesmana-CV.tex"
+    "cv": "tectonic -o public cv/Ariel-Pratama-Lesmana-CV.tex"
   },
   "dependencies": {
     "next": "16.2.6",
