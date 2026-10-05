@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# npm run cv build dir (the PDF itself goes to public/)
+/.cv/

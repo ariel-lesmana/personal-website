@@ -322,6 +322,7 @@ body.spotlight-on .spotlight { opacity: 1; }
   transition: all 0.25s ease;
 }
 .cta-button:hover { background: var(--accent); border-color: var(--accent); color: #fff; transform: translateY(-2px); }
+.cta-button.ghost { background: transparent; color: var(--ink); border-color: var(--rule-strong); }
 .cta-button .arrow { transition: transform 0.25s ease; }
 .cta-button:hover .arrow { transform: translate(3px, -3px); }
 .hero-sublink {
@@ -739,7 +740,7 @@ body.spotlight-on .spotlight { opacity: 1; }
 .contact-cta .accent { color: var(--accent); }
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   padding-top: 40px;
   border-top: 1px solid var(--rule);

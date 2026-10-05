@@ -43,6 +43,13 @@ export function Contact() {
             <span className="contact-link-arrow">↗</span>
           </span>
         </a>
+        <a href="/Ariel-Pratama-Lesmana-CV.pdf" download className="contact-link">
+          <span className="contact-link-label">CV</span>
+          <span className="contact-link-value">
+            <span>Download PDF</span>
+            <span className="contact-link-arrow">↓</span>
+          </span>
+        </a>
       </div>
     </section>
   );

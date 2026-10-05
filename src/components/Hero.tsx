@@ -59,6 +59,9 @@ export function Hero() {
           <a href="#contact" className="cta-button">
             Get in touch <span className="arrow">↗</span>
           </a>
+          <a href="/Ariel-Pratama-Lesmana-CV.pdf" download className="cta-button ghost">
+            Download CV <span className="arrow">↓</span>
+          </a>
           <a href="#experience" className="hero-sublink">
             ↓ See selected work
           </a>
